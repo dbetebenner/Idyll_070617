@@ -6,25 +6,42 @@
   author:"dbetebenner"
   authorLink:"https://github.com/dbetebenner" /]
 
-This is an Idyll file. Write text
-as you please in here. To add interactivity,
-you can add different components to the text.
+[var name:"randomSeed" value:0 /]
 
-Here is how you can use a variable:
+[section]
 
-[var name:"exampleVar" value: 5 /]
+[waypoint]
+Idyll
+[/waypoint]
 
-[Range min:0 max:10 value:exampleVar /]
-[DisplayVar var:exampleVar /]
+[waypoint onEnteredView:`randomSeed=1`]
+A new markup language 
+for creating interactive 
+documents
+[/waypoint]
 
-You can use standard html tags if a
-component with the same name
-doesn't exist.
+[waypoint onEnteredView:`randomSeed=0` ]
+Combine a lightweight 
+markup language and reactive 
+JavaScript components
+[/waypoint]
 
-You can also include code samples.
 
-```js
-function thisIsSoEasy() {
-  return 'Yes. Yes it is.'
-}
-```
+[waypoint onEnteredView:`randomSeed=1` ]
+Visit [link href:"https://idyll-lang.github.io/" text:"https://idyll-lang.github.io/" /]
+for more information
+[/waypoint]
+
+[waypoint onEnteredView:`randomSeed=2`]
+Here is the markup for this 
+page:
+
+[/waypoint]
+
+[/section]
+
+[fixed]
+
+[Chart type:"scatter" randomSeed:randomSeed /]
+
+[/fixed]
