@@ -10,7 +10,7 @@
 
 [section]
 
-[waypoint]
+[waypoint height: 100vh]
 Idyll
 [/waypoint]
 
