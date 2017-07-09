@@ -10,9 +10,9 @@
 
 [section]
 
-[waypoint]
+[fixed]
 Idyll
-[/waypoint]
+[/fixed]
 
 [waypoint onEnteredView:`randomSeed=1`]
 A new markup language
