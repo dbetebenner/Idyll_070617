@@ -15,14 +15,14 @@ Idyll
 [/waypoint]
 
 [waypoint onEnteredView:`randomSeed=1`]
-A new markup language 
-for creating interactive 
+A new markup language
+for creating interactive
 documents
 [/waypoint]
 
 [waypoint onEnteredView:`randomSeed=0` ]
-Combine a lightweight 
-markup language and reactive 
+Combine a lightweight
+markup language and reactive
 JavaScript components
 [/waypoint]
 
@@ -33,7 +33,7 @@ for more information
 [/waypoint]
 
 [waypoint onEnteredView:`randomSeed=2`]
-Here is the markup for this 
+Here is the markup for this
 page:
 
 [/waypoint]
