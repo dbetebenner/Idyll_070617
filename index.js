@@ -52129,64 +52129,22 @@ var _victoryChart = require("victory-chart");
 
 var _victoryPie = require("victory-pie");exports.Area = _victoryCore.Area;exports.Bar = _victoryCore.Bar;exports.Candle = _victoryCore.Candle;exports.ClipPath = _victoryCore.ClipPath;exports.Curve = _victoryCore.Curve;exports.ErrorBar = _victoryCore.ErrorBar;exports.Line = _victoryCore.Line;exports.Point = _victoryCore.Point;exports.Slice = _victoryCore.Slice;exports.Voronoi = _victoryCore.Voronoi;exports.Flyout = _victoryCore.Flyout;exports.VictoryAnimation = _victoryCore.VictoryAnimation;exports.VictoryArea = _victoryChart.VictoryArea;exports.VictoryAxis = _victoryChart.VictoryAxis;exports.VictoryPolarAxis = _victoryChart.VictoryPolarAxis;exports.VictoryBar = _victoryChart.VictoryBar;exports.VictoryCandlestick = _victoryChart.VictoryCandlestick;exports.VictoryChart = _victoryChart.VictoryChart;exports.VictoryErrorBar = _victoryChart.VictoryErrorBar;exports.VictoryGroup = _victoryChart.VictoryGroup;exports.VictoryLine = _victoryChart.VictoryLine;exports.VictoryLabel = _victoryCore.VictoryLabel;exports.VictoryLegend = _victoryCore.VictoryLegend;exports.VictoryPie = _victoryPie.VictoryPie;exports.VictoryScatter = _victoryChart.VictoryScatter;exports.VictoryStack = _victoryChart.VictoryStack;exports.VictoryTheme = _victoryCore.VictoryTheme;exports.VictoryTransition = _victoryCore.VictoryTransition;exports.VictorySharedEvents = _victoryCore.VictorySharedEvents;exports.VictoryTooltip = _victoryCore.VictoryTooltip;exports.VictoryVoronoi = _victoryChart.VictoryVoronoi;exports.VictoryPortal = _victoryCore.VictoryPortal;exports.Portal = _victoryCore.Portal;exports.VictoryContainer = _victoryCore.VictoryContainer;exports.VictoryClipContainer = _victoryCore.VictoryClipContainer;exports.VictoryZoomContainer = _victoryChart.VictoryZoomContainer;exports.ZoomHelpers = _victoryChart.ZoomHelpers;exports.zoomContainerMixin = _victoryChart.zoomContainerMixin;exports.VictorySelectionContainer = _victoryChart.VictorySelectionContainer;exports.SelectionHelpers = _victoryChart.SelectionHelpers;exports.selectionContainerMixin = _victoryChart.selectionContainerMixin;exports.VictoryBrushContainer = _victoryChart.VictoryBrushContainer;exports.BrushHelpers = _victoryChart.BrushHelpers;exports.brushContainerMixin = _victoryChart.brushContainerMixin;exports.VictoryCursorContainer = _victoryChart.VictoryCursorContainer;exports.CursorHelpers = _victoryChart.CursorHelpers;exports.cursorContainerMixin = _victoryChart.cursorContainerMixin;exports.VictoryVoronoiContainer = _victoryChart.VictoryVoronoiContainer;exports.VoronoiHelpers = _victoryChart.VoronoiHelpers;exports.voronoiContainerMixin = _victoryChart.voronoiContainerMixin;exports.combineContainerMixins = _victoryChart.combineContainerMixins;exports.createContainer = _victoryChart.createContainer;exports.addEvents = _victoryCore.addEvents;exports.Collection = _victoryCore.Collection;exports.Data = _victoryCore.Data;exports.DefaultTransitions = _victoryCore.DefaultTransitions;exports.Domain = _victoryCore.Domain;exports.Events = _victoryCore.Events;exports.Helpers = _victoryCore.Helpers;exports.Log = _victoryCore.Log;exports.PropTypes = _victoryCore.PropTypes;exports.Scale = _victoryCore.Scale;exports.Style = _victoryCore.Style;exports.TextSize = _victoryCore.TextSize;exports.Transitions = _victoryCore.Transitions;exports.Selection = _victoryCore.Selection;exports.LabelHelpers = _victoryCore.LabelHelpers;
 
-},{"victory-chart":"/app/node_modules/victory-chart/lib/index.js","victory-core":"/app/node_modules/victory-core/lib/index.js","victory-pie":"/app/node_modules/victory-pie/lib/index.js"}],"/app/tmp/dbetebenner/Idyll_070617/components/waypoint.js":[function(require,module,exports){
-'use strict';
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var React = require('react');
-var IdyllComponent = require('idyll-component');
-
-var Waypoint = function (_IdyllComponent) {
-  _inherits(Waypoint, _IdyllComponent);
-
-  function Waypoint(props) {
-    _classCallCheck(this, Waypoint);
-
-    return _possibleConstructorReturn(this, (Waypoint.__proto__ || Object.getPrototypeOf(Waypoint)).call(this, props));
-  }
-
-  _createClass(Waypoint, [{
-    key: 'render',
-    value: function render() {
-      return React.createElement(
-        'div',
-        _extends({ className: 'waypoint ' + (this.props.className || '') }, this.props),
-        this.props.children
-      );
-    }
-  }]);
-
-  return Waypoint;
-}(IdyllComponent);
-
-module.exports = Waypoint;
-
-},{"idyll-component":"/app/node_modules/idyll-component/lib.js","react":"/app/node_modules/react/react.js"}],"__IDYLL_AST__":[function(require,module,exports){
+},{"victory-chart":"/app/node_modules/victory-chart/lib/index.js","victory-core":"/app/node_modules/victory-core/lib/index.js","victory-pie":"/app/node_modules/victory-pie/lib/index.js"}],"__IDYLL_AST__":[function(require,module,exports){
 "use strict";
 
-module.exports = [["Header", [["title", ["value", "Idyll Example: July 6th, 2017. Scroll"]], ["subtitle", ["value", "Welcome to Literasee, powered by Idyll"]], ["author", ["value", "dbetebenner"]], ["authorLink", ["value", "https://github.com/dbetebenner"]]], []], ["var", [["name", ["value", "randomSeed"]], ["value", ["value", 0]]], []], ["section", [], [["waypoint", [], ["\nIdyll"]], ["waypoint", [["onEnteredView", ["expression", "randomSeed=1"]]], ["\nA new markup language \nfor creating interactive \ndocuments"]], ["waypoint", [["onEnteredView", ["expression", "randomSeed=0"]]], ["\nCombine a lightweight \nmarkup language and reactive \nJavaScript components"]], ["waypoint", [["onEnteredView", ["expression", "randomSeed=1"]]], [["p", [], ["\nVisit ", ["link", [["href", ["value", "https://idyll-lang.github.io/"]], ["text", ["value", "https://idyll-lang.github.io/"]]], []], "\nfor more information"]]]], ["waypoint", [["onEnteredView", ["expression", "randomSeed=2"]]], ["\nHere is the markup for this \npage:"]]]], ["fixed", [], [["Chart", [["type", ["value", "scatter"]], ["randomSeed", ["variable", "randomSeed"]]], []]]]];
+module.exports = [["Header", [["title", ["value", "Idyll Example: July 6th, 2017. Scroll"]], ["subtitle", ["value", "Welcome to Literasee, powered by Idyll"]], ["author", ["value", "dbetebenner"]], ["authorLink", ["value", "https://github.com/dbetebenner"]]], []], ["var", [["name", ["value", "randomSeed"]], ["value", ["value", 0]]], []], ["section", [], [["fixed", [], ["\nIdyll"]], ["fixed", [["onEnteredView", ["expression", "randomSeed=1"]]], ["\nA new markup language\nfor creating interactive\ndocuments"]], ["fixed", [["onEnteredView", ["expression", "randomSeed=0"]]], ["\nCombine a lightweight\nmarkup language and reactive\nJavaScript components"]], ["fixed", [["onEnteredView", ["expression", "randomSeed=1"]]], [["p", [], ["\nVisit ", ["link", [["href", ["value", "https://idyll-lang.github.io/"]], ["text", ["value", "https://idyll-lang.github.io/"]]], []], "\nfor more information"]]]], ["fixed", [["onEnteredView", ["expression", "randomSeed=2"]]], ["\nHere is the markup for this\npage:"]]]], ["fixed", [], [["Chart", [["type", ["value", "scatter"]], ["randomSeed", ["variable", "randomSeed"]]], []]]]];
 
 },{}],"__IDYLL_COMPONENTS__":[function(require,module,exports){
 'use strict';
 
 module.exports = {
 	'header': require('/app/node_modules/idyll-default-components/header'),
-	'waypoint': require('/app/tmp/dbetebenner/Idyll_070617/components/waypoint'),
-	'link': require('/app/node_modules/idyll-default-components/link'),
 	'fixed': require('/app/node_modules/idyll-default-components/fixed'),
+	'link': require('/app/node_modules/idyll-default-components/link'),
 	'chart': require('/app/node_modules/idyll-default-components/chart')
 };
 
-},{"/app/node_modules/idyll-default-components/chart":"/app/node_modules/idyll-default-components/chart.js","/app/node_modules/idyll-default-components/fixed":"/app/node_modules/idyll-default-components/fixed.js","/app/node_modules/idyll-default-components/header":"/app/node_modules/idyll-default-components/header.js","/app/node_modules/idyll-default-components/link":"/app/node_modules/idyll-default-components/link.js","/app/tmp/dbetebenner/Idyll_070617/components/waypoint":"/app/tmp/dbetebenner/Idyll_070617/components/waypoint.js"}],"__IDYLL_DATA__":[function(require,module,exports){
+},{"/app/node_modules/idyll-default-components/chart":"/app/node_modules/idyll-default-components/chart.js","/app/node_modules/idyll-default-components/fixed":"/app/node_modules/idyll-default-components/fixed.js","/app/node_modules/idyll-default-components/header":"/app/node_modules/idyll-default-components/header.js","/app/node_modules/idyll-default-components/link":"/app/node_modules/idyll-default-components/link.js"}],"__IDYLL_DATA__":[function(require,module,exports){
 "use strict";
 
 module.exports = {};
