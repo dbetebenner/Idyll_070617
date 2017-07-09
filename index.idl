@@ -14,29 +14,29 @@
 Idyll
 [/fixed]
 
-[waypoint onEnteredView:`randomSeed=1`]
+[fixed onEnteredView:`randomSeed=1`]
 A new markup language
 for creating interactive
 documents
-[/waypoint]
+[/fixed]
 
-[waypoint onEnteredView:`randomSeed=0` ]
+[fixed onEnteredView:`randomSeed=0` ]
 Combine a lightweight
 markup language and reactive
 JavaScript components
-[/waypoint]
+[/fixed]
 
 
-[waypoint onEnteredView:`randomSeed=1` ]
+[fixed onEnteredView:`randomSeed=1` ]
 Visit [link href:"https://idyll-lang.github.io/" text:"https://idyll-lang.github.io/" /]
 for more information
-[/waypoint]
+[/fixed]
 
-[waypoint onEnteredView:`randomSeed=2`]
+[fixed onEnteredView:`randomSeed=2`]
 Here is the markup for this
 page:
 
-[/waypoint]
+[/fixed]
 
 [/section]
 
